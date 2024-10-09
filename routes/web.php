@@ -3,6 +3,7 @@
 use App\Models\Product;
 use App\Models\Category;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ImageController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\ProfileController;
 
@@ -15,6 +16,15 @@ Route::get('/products', [ProductController::class, 'find'])->name('products.find
 Route::get('product/{product:slug}', function (Product $product) {
     return view('product-detail', ["product" => $product]);
 });
+
+Route::post('/image-upload', [ImageController::class, 'upload'])->name('image.upload');
+
+Route::get('/image', function () {
+    $imagePath = session('imagePath');
+    // Handle search with roboflow
+    
+    return view('image-upload', ['imagePath' => $imagePath]);
+})->name('image');
 
 // Route::get('/dashboard', function () {
 //     return view('dashboard');
