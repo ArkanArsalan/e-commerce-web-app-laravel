@@ -20,6 +20,7 @@ class ProductSeeder extends Seeder
             'price' => '25000000',
             'description' => 'Latest iPhone model with advanced features.',
             'category_id' => 1,
+            'picture_path' => 'images/products/iphone-15-pro-max.jpg'
         ]);
 
         Product::create([
@@ -28,6 +29,7 @@ class ProductSeeder extends Seeder
             'price' => '20000000',
             'description' => 'Samsung\'s flagship phone with great performance.',
             'category_id' => 1,
+            'picture_path' => 'images/products/samsung-galaxy-s23.jpg'
         ]);
 
         Product::create([
@@ -36,6 +38,7 @@ class ProductSeeder extends Seeder
             'price' => '23000000',
             'description' => 'Oppo\'s flagship phone with excellent camera capabilities.',
             'category_id' => 1,
+            'picture_path' => 'images/products/oppo-reno-10-pro-plus.jpg'
         ]);
             
         Product::create([
@@ -44,6 +47,7 @@ class ProductSeeder extends Seeder
             'price' => '18000000',
             'description' => 'High-performance Xiaomi phone with advanced features.',
             'category_id' => 1,
+            'picture_path' => 'images/products/xiaomi-13-pro.jpg'
         ]);
         
         Product::create([
@@ -52,6 +56,7 @@ class ProductSeeder extends Seeder
             'price' => '24000000',
             'description' => 'Google\'s latest flagship phone with pure Android experience.',
             'category_id' => 1,
+            'picture_path' => 'images/products/google-pixel-8-pro.jpg'
         ]);
         
         Product::create([
@@ -60,6 +65,7 @@ class ProductSeeder extends Seeder
             'price' => '19000000',
             'description' => 'OnePlus flagship phone known for its smooth performance.',
             'category_id' => 1,
+            'picture_path' => 'images/products/oneplus-11.jpg'
         ]);
         
         Product::create([
@@ -68,6 +74,7 @@ class ProductSeeder extends Seeder
             'price' => '22000000',
             'description' => 'Vivo\'s flagship phone with advanced camera technology.',
             'category_id' => 1,
+            'picture_path' => 'images/products/vivo-x90-pro-plus.jpg'
         ]);
 
         // Tablet Category
@@ -77,6 +84,7 @@ class ProductSeeder extends Seeder
             'price' => '18000000',
             'description' => 'Powerful tablet with M2 chip for high-end tasks.',
             'category_id' => 2,
+            'picture_path' => 'images/products/ipad-pro-12.9.jpg'
         ]);
 
         Product::create([
@@ -85,6 +93,7 @@ class ProductSeeder extends Seeder
             'price' => '15000000',
             'description' => 'Samsung\'s premium tablet with AMOLED display.',
             'category_id' => 2,
+            'picture_path' => 'images/products/samsung-galaxy-tab-s9.jpg'
         ]);
 
         Product::create([
@@ -93,6 +102,7 @@ class ProductSeeder extends Seeder
             'price' => '12000000',
             'description' => 'Xiaomi\'s high-performance tablet with excellent value.',
             'category_id' => 2,
+            'picture_path' => 'images/products/xiaomi-pad-6-pro.jpg'
         ]);
         
         Product::create([
@@ -101,6 +111,7 @@ class ProductSeeder extends Seeder
             'price' => '14000000',
             'description' => 'Lenovo\'s premium tablet with great performance and display.',
             'category_id' => 2,
+            'picture_path' => 'images/products/lenovo-tab-p11-pro-gen-2.jpg'
         ]);
         
         Product::create([
@@ -109,6 +120,7 @@ class ProductSeeder extends Seeder
             'price' => '13000000',
             'description' => 'Huawei\'s high-end tablet with powerful features.',
             'category_id' => 2,
+            'picture_path' => 'images/products/huawei-matepad-pro-11.jpg'
         ]);
         
         Product::create([
@@ -117,6 +129,7 @@ class ProductSeeder extends Seeder
             'price' => '8000000',
             'description' => 'Oppo\'s affordable tablet with good performance.',
             'category_id' => 2,
+            'picture_path' => 'images/products/oppo-pad-air.jpg'
         ]);
         
         Product::create([
@@ -125,6 +138,7 @@ class ProductSeeder extends Seeder
             'price' => '9000000',
             'description' => 'Realme\'s budget-friendly tablet with decent specs.',
             'category_id' => 2,
+            'picture_path' => 'images/products/realme-pad-2.jpg'
         ]);
 
         // Laptop Category
@@ -134,6 +148,7 @@ class ProductSeeder extends Seeder
             'price' => '35000000',
             'description' => 'Powerful laptop with M1 chip for professionals.',
             'category_id' => 3,
+            'picture_path' => 'images/products/apple-macbook-pro-16.jpg'
         ]);
 
         Product::create([
@@ -142,6 +157,7 @@ class ProductSeeder extends Seeder
             'price' => '18000000',
             'description' => 'Slim and powerful laptop with great performance.',
             'category_id' => 3,
+            'picture_path' => 'images/products/dell-xps-13.jpg'
         ]);
 
         Product::create([
@@ -150,6 +166,7 @@ class ProductSeeder extends Seeder
             'price' => '22000000',
             'description' => 'Versatile 2-in-1 laptop with premium design.',
             'category_id' => 3,
+            'picture_path' => 'images/products/hp-spectre-x360.jpg'
         ]);
         
         Product::create([
@@ -158,6 +175,7 @@ class ProductSeeder extends Seeder
             'price' => '20000000',
             'description' => 'Durable and reliable business laptop with great performance.',
             'category_id' => 3,
+            'picture_path' => 'images/products/lenovo-thinkpad-x1-carbon.jpg'
         ]);
         
         Product::create([
@@ -166,6 +184,7 @@ class ProductSeeder extends Seeder
             'price' => '15000000',
             'description' => 'Slim and lightweight laptop with good performance and value.',
             'category_id' => 3,
+            'picture_path' => 'images/products/acer-swift-x.jpg'
         ]);
         
         Product::create([
@@ -174,6 +193,7 @@ class ProductSeeder extends Seeder
             'price' => '18000000',
             'description' => 'Stylish and powerful laptop with OLED display.',
             'category_id' => 3,
+            'picture_path' => 'images/products/asus-zenbook-s-13.jpg'
         ]);
         
         Product::create([
@@ -182,6 +202,7 @@ class ProductSeeder extends Seeder
             'price' => '25000000',
             'description' => '2-in-1 laptop with versatile design and powerful performance.',
             'category_id' => 3,
+            'picture_path' => 'images/products/microsoft-surface-laptop-studio.jpg'
         ]);
 
         // Television Category
@@ -191,54 +212,61 @@ class ProductSeeder extends Seeder
             'price' => '15000000',
             'description' => 'High-quality 4K LED TV with smart features.',
             'category_id' => 4,
+            'picture_path' => 'images/products/sony-bravia-55.jpg'
         ]);
 
         Product::create([
             'name' => 'Samsung QLED 65" TV',
             'slug' => 'samsung-qled-tv',
-            'price' => '25000000',
-            'description' => 'Large screen QLED TV with quantum dot technology.',
+            'price' => '20000000',
+            'description' => 'Premium QLED TV with vibrant colors and great features.',
             'category_id' => 4,
+            'picture_path' => 'images/products/samsung-qled-65.jpg'
         ]);
 
         Product::create([
-            'name' => 'LG OLED 4K TV',
-            'slug' => 'lg-oled-4k-tv',
-            'price' => '20000000',
-            'description' => 'High-quality OLED TV with excellent picture quality.',
+            'name' => 'LG OLED 77" TV',
+            'slug' => 'lg-oled-tv',
+            'price' => '30000000',
+            'description' => 'High-end OLED TV with excellent contrast and clarity.',
             'category_id' => 4,
+            'picture_path' => 'images/products/lg-oled-77.jpg'
         ]);
         
         Product::create([
-            'name' => 'TCL 55" 4K UHD TV',
-            'slug' => 'tcl-55-4k-uhd-tv',
+            'name' => 'TCL 55" 4K UHD Smart TV',
+            'slug' => 'tcl-55-uhd-smart-tv',
             'price' => '10000000',
-            'description' => 'Affordable 4K TV with good picture quality.',
+            'description' => 'Affordable 4K smart TV with great picture quality.',
             'category_id' => 4,
+            'picture_path' => 'images/products/tcl-55-uhd-smart-tv.jpg'
         ]);
         
         Product::create([
-            'name' => 'Hisense 65" ULED 4K TV',
-            'slug' => 'hisense-65-uled-4k-tv',
-            'price' => '18000000',
-            'description' => 'High-end ULED TV with excellent picture quality.',
+            'name' => 'Panasonic 65" LED TV',
+            'slug' => 'panasonic-65-led-tv',
+            'price' => '17000000',
+            'description' => 'High-quality LED TV with smart features and 4K resolution.',
             'category_id' => 4,
+            'picture_path' => 'images/products/panasonic-65-led-tv.jpg'
         ]);
         
         Product::create([
-            'name' => 'Philips Ambilight 55" TV',
-            'slug' => 'philips-ambilight-55-tv',
-            'price' => '16000000',
-            'description' => '4K TV with ambient lighting for immersive viewing.',
+            'name' => 'Philips 50" 4K TV',
+            'slug' => 'philips-50-4k-tv',
+            'price' => '11000000',
+            'description' => 'Affordable 4K TV with excellent performance for the price.',
             'category_id' => 4,
+            'picture_path' => 'images/products/philips-50-4k-tv.jpg'
         ]);
         
         Product::create([
-            'name' => 'Panasonic 4K OLED TV',
-            'slug' => 'panasonic-4k-oled-tv',
-            'price' => '18000000',
-            'description' => 'High-quality OLED TV with good performance and features.',
+            'name' => 'Sharp Aquos 60" TV',
+            'slug' => 'sharp-aquos-60-tv',
+            'price' => '14000000',
+            'description' => 'Sharp\'s reliable LED TV with great picture quality and value.',
             'category_id' => 4,
+            'picture_path' => 'images/products/sharp-aquos-60-tv.jpg'
         ]);
     }
     
