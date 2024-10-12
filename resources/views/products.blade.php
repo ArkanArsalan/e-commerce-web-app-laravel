@@ -11,7 +11,7 @@
                                 class="rounded-lg border border-gray-200 bg-white p-6 shadow-sm dark:border-gray-700 dark:bg-gray-800">
                                 <div class="h-56 w-full">
                                     <a href="/product/{{ $product->slug }}">
-                                        <img class="mx-auto h-full dark:hidden" src="{{ $product->picture_path }}"
+                                        <img class="mx-auto h-full" src="{{ asset($product->picture_path) }}"
                                             alt="" />
                                     </a>
                                 </div>

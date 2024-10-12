@@ -34,4 +34,12 @@ class ProductController extends Controller
         return view('products', compact('products'));
     }
 
+    public function showDetailProduct($slug)
+    {
+        // Find the product by slug
+        $product = Product::where('slug', $slug)->firstOrFail();
+
+        // Return the view with the product data
+        return view('product-detail', compact('product'));
+    }
 }

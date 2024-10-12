@@ -210,7 +210,7 @@ class ProductSeeder extends Seeder
             'name' => 'Sony Bravia 55" TV',
             'slug' => 'sony-bravia-tv',
             'price' => '15000000',
-            'description' => 'High-quality 4K LED TV with smart features.',
+            'description' => 'High-quality 4K LED Television with smart features.',
             'category_id' => 4,
             'picture_path' => 'images/products/sony-bravia-55.jpg'
         ]);
@@ -219,7 +219,7 @@ class ProductSeeder extends Seeder
             'name' => 'Samsung QLED 65" TV',
             'slug' => 'samsung-qled-tv',
             'price' => '20000000',
-            'description' => 'Premium QLED TV with vibrant colors and great features.',
+            'description' => 'Premium QLED Television with vibrant colors and great features.',
             'category_id' => 4,
             'picture_path' => 'images/products/samsung-qled-65.jpg'
         ]);
@@ -228,7 +228,7 @@ class ProductSeeder extends Seeder
             'name' => 'LG OLED 77" TV',
             'slug' => 'lg-oled-tv',
             'price' => '30000000',
-            'description' => 'High-end OLED TV with excellent contrast and clarity.',
+            'description' => 'High-end OLED Television with excellent contrast and clarity.',
             'category_id' => 4,
             'picture_path' => 'images/products/lg-oled-77.jpg'
         ]);
@@ -237,7 +237,7 @@ class ProductSeeder extends Seeder
             'name' => 'TCL 55" 4K UHD Smart TV',
             'slug' => 'tcl-55-uhd-smart-tv',
             'price' => '10000000',
-            'description' => 'Affordable 4K smart TV with great picture quality.',
+            'description' => 'Affordable 4K smart television with great picture quality.',
             'category_id' => 4,
             'picture_path' => 'images/products/tcl-55-uhd-smart-tv.jpg'
         ]);
@@ -246,7 +246,7 @@ class ProductSeeder extends Seeder
             'name' => 'Panasonic 65" LED TV',
             'slug' => 'panasonic-65-led-tv',
             'price' => '17000000',
-            'description' => 'High-quality LED TV with smart features and 4K resolution.',
+            'description' => 'High-quality LED television with smart features and 4K resolution.',
             'category_id' => 4,
             'picture_path' => 'images/products/panasonic-65-led-tv.jpg'
         ]);
@@ -255,7 +255,7 @@ class ProductSeeder extends Seeder
             'name' => 'Philips 50" 4K TV',
             'slug' => 'philips-50-4k-tv',
             'price' => '11000000',
-            'description' => 'Affordable 4K TV with excellent performance for the price.',
+            'description' => 'Affordable 4K television with excellent performance for the price.',
             'category_id' => 4,
             'picture_path' => 'images/products/philips-50-4k-tv.jpg'
         ]);
@@ -264,7 +264,7 @@ class ProductSeeder extends Seeder
             'name' => 'Sharp Aquos 60" TV',
             'slug' => 'sharp-aquos-60-tv',
             'price' => '14000000',
-            'description' => 'Sharp\'s reliable LED TV with great picture quality and value.',
+            'description' => 'Sharp\'s reliable LED television with great picture quality and value.',
             'category_id' => 4,
             'picture_path' => 'images/products/sharp-aquos-60-tv.jpg'
         ]);

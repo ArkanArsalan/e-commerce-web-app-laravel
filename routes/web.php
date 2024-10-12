@@ -15,9 +15,7 @@ Route::get('/', function () {
 
 Route::get('/products', [ProductController::class, 'find'])->name('products.find');
 
-Route::get('product/{product:slug}', function (Product $product) {
-    return view('product-detail', ["product" => $product]);
-});
+Route::get('product/{slug}', [ProductController::class, 'showDetailProduct']);
 
 Route::post('/search-image', [ImageController::class, 'searchImage'])->name('search.image');
 
