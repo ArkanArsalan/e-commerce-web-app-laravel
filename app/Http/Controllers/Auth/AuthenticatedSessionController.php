@@ -28,6 +28,10 @@ class AuthenticatedSessionController extends Controller
 
         $request->session()->regenerate();
 
+        if ($request->user()->role === 'admin') {
+            return redirect()->intended(route('dashboard')); 
+        }
+
         return redirect()->intended(route('home', absolute: false));
     }
 
@@ -41,7 +45,7 @@ class AuthenticatedSessionController extends Controller
         $request->session()->invalidate();
 
         $request->session()->regenerateToken();
-
+        
         return redirect('/');
     }
 }

@@ -6,7 +6,9 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ImageController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\ProfileController;
+use App\Http\Middleware\RoleMiddleware;
 
+# User
 Route::get('/', function () {
     return view('home');
 })->name('home');
@@ -26,9 +28,11 @@ Route::get('/image', function () {
     return view('image-upload', ['imagePath' => $imagePath]);
 })->name('image');
 
-// Route::get('/dashboard', function () {
-//     return view('dashboard');
-// })->middleware(['auth', 'verified'])->name('dashboard');
+
+# Admin
+Route::get('/dashboard', function () {
+    return view('dashboard');
+})->middleware(['auth', 'verified', RoleMiddleware::class.':admin'])->name('dashboard');
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
