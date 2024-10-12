@@ -8,33 +8,43 @@ use GuzzleHttp\Client;
 
 class ImageController extends Controller
 {
-    public function upload(Request $request)
+    public function searchImage(Request $request)
     {
         // Validate the image input
         $request->validate([
             'image' => 'required|image|mimes:jpeg,png,jpg,gif|max:2048',
         ]);
-
+    
         // Save the uploaded image to the public path
         if ($request->file('image')) {
             $imageName = time() . '.' . $request->image->extension();
-            $request->image->move(public_path('images'), $imageName);
-
-            // Get the image path
-            $imagePath = public_path('images/' . $imageName);
-
+            $imagePath = public_path('images/search');
+            
+            // Ensure the 'images/search' directory exists
+            if (!File::exists($imagePath)) {
+                File::makeDirectory($imagePath, 0755, true);
+            }
+    
+            // Move the image to the 'images/search' directory
+            $request->image->move($imagePath, $imageName);
+    
+            // Get the full path of the image
+            $imageFullPath = $imagePath . '/' . $imageName;
+    
             // Send the image to the Roboflow API using Guzzle
-            $response = $this->sendToRoboflow($imagePath);
-
-            // Return the response data to the view
-            return view('image-upload', [
-                'imagePath' => 'images/' . $imageName,
-                'response' => $response,
-            ]);
+            $response = $this->sendToRoboflow($imageFullPath);
+    
+            // Check if the response contains a top classification
+            if (isset($response['top'])) {
+                // Redirect to the product search page with the classification as search term
+                return redirect()->route('products.find', ['search' => $response['top']]);
+            }
+    
+            return redirect()->route('image')->with('error', 'No classification found.');
         }
-
+    
         return redirect()->route('image')->with('error', 'Image upload failed.');
-    }
+    }    
 
     private function sendToRoboflow($imagePath)
     {
@@ -46,7 +56,7 @@ class ImageController extends Controller
             $client = new \GuzzleHttp\Client();
     
             // Make the POST request to Roboflow API
-            $response = $client->post('https://classify.roboflow.com/electronic-detection-zusro/1', [
+            $response = $client->post(env('ROBOFLOW_API_URL'), [
                 'headers' => [
                     'Content-Type' => 'application/x-www-form-urlencoded',
                 ],

@@ -13,13 +13,13 @@ class ProductSeeder extends Seeder
      */
     public function run(): void
     {
-        // Electronics
+        // Phone Category
         Product::create([
             'name' => 'iPhone 15 Pro Max',
             'slug' => 'iphone-15-pro-max',
             'price' => '25000000',
             'description' => 'Latest iPhone model with advanced features.',
-            'category_id' => 1, // Electronics
+            'category_id' => 1,
         ]);
 
         Product::create([
@@ -27,124 +27,219 @@ class ProductSeeder extends Seeder
             'slug' => 'samsung-galaxy-s23',
             'price' => '20000000',
             'description' => 'Samsung\'s flagship phone with great performance.',
-            'category_id' => 1, // Electronics
+            'category_id' => 1,
         ]);
 
         Product::create([
-            'name' => 'Sony Bravia 55" TV',
-            'slug' => 'sony-bravia-tv',
-            'price' => '15000000',
-            'description' => 'High-quality 4K LED TV with smart features.',
-            'category_id' => 1, // Electronics
+            'name' => 'Oppo Reno 10 Pro+',
+            'slug' => 'oppo-reno-10-pro-plus',
+            'price' => '23000000',
+            'description' => 'Oppo\'s flagship phone with excellent camera capabilities.',
+            'category_id' => 1,
+        ]);
+            
+        Product::create([
+            'name' => 'Xiaomi 13 Pro',
+            'slug' => 'xiaomi-13-pro',
+            'price' => '18000000',
+            'description' => 'High-performance Xiaomi phone with advanced features.',
+            'category_id' => 1,
+        ]);
+        
+        Product::create([
+            'name' => 'Google Pixel 8 Pro',
+            'slug' => 'google-pixel-8-pro',
+            'price' => '24000000',
+            'description' => 'Google\'s latest flagship phone with pure Android experience.',
+            'category_id' => 1,
+        ]);
+        
+        Product::create([
+            'name' => 'OnePlus 11',
+            'slug' => 'oneplus-11',
+            'price' => '19000000',
+            'description' => 'OnePlus flagship phone known for its smooth performance.',
+            'category_id' => 1,
+        ]);
+        
+        Product::create([
+            'name' => 'Vivo X90 Pro+',
+            'slug' => 'vivo-x90-pro-plus',
+            'price' => '22000000',
+            'description' => 'Vivo\'s flagship phone with advanced camera technology.',
+            'category_id' => 1,
         ]);
 
+        // Tablet Category
+        Product::create([
+            'name' => 'iPad Pro 12.9"',
+            'slug' => 'ipad-pro-12-9',
+            'price' => '18000000',
+            'description' => 'Powerful tablet with M2 chip for high-end tasks.',
+            'category_id' => 2,
+        ]);
+
+        Product::create([
+            'name' => 'Samsung Galaxy Tab S9',
+            'slug' => 'galaxy-tab-s9',
+            'price' => '15000000',
+            'description' => 'Samsung\'s premium tablet with AMOLED display.',
+            'category_id' => 2,
+        ]);
+
+        Product::create([
+            'name' => 'Xiaomi Pad 6 Pro',
+            'slug' => 'xiaomi-pad-6-pro',
+            'price' => '12000000',
+            'description' => 'Xiaomi\'s high-performance tablet with excellent value.',
+            'category_id' => 2,
+        ]);
+        
+        Product::create([
+            'name' => 'Lenovo Tab P11 Pro Gen 2',
+            'slug' => 'lenovo-tab-p11-pro-gen-2',
+            'price' => '14000000',
+            'description' => 'Lenovo\'s premium tablet with great performance and display.',
+            'category_id' => 2,
+        ]);
+        
+        Product::create([
+            'name' => 'Huawei MatePad Pro 11',
+            'slug' => 'huawei-matepad-pro-11',
+            'price' => '13000000',
+            'description' => 'Huawei\'s high-end tablet with powerful features.',
+            'category_id' => 2,
+        ]);
+        
+        Product::create([
+            'name' => 'Oppo Pad Air',
+            'slug' => 'oppo-pad-air',
+            'price' => '8000000',
+            'description' => 'Oppo\'s affordable tablet with good performance.',
+            'category_id' => 2,
+        ]);
+        
+        Product::create([
+            'name' => 'Realme Pad 2',
+            'slug' => 'realme-pad-2',
+            'price' => '9000000',
+            'description' => 'Realme\'s budget-friendly tablet with decent specs.',
+            'category_id' => 2,
+        ]);
+
+        // Laptop Category
         Product::create([
             'name' => 'Apple MacBook Pro 16"',
             'slug' => 'macbook-pro-16',
             'price' => '35000000',
             'description' => 'Powerful laptop with M1 chip for professionals.',
-            'category_id' => 1, // Electronics
-        ]);
-
-        // Furniture
-        Product::create([
-            'name' => 'Modern Sofa',
-            'slug' => 'modern-sofa',
-            'price' => '7000000',
-            'description' => 'Comfortable and stylish modern sofa.',
-            'category_id' => 2, // Furniture
+            'category_id' => 3,
         ]);
 
         Product::create([
-            'name' => 'Wooden Dining Table',
-            'slug' => 'wooden-dining-table',
-            'price' => '12000000',
-            'description' => 'Solid wood dining table for 6 people.',
-            'category_id' => 2, // Furniture
+            'name' => 'Dell XPS 13',
+            'slug' => 'dell-xps-13',
+            'price' => '18000000',
+            'description' => 'Slim and powerful laptop with great performance.',
+            'category_id' => 3,
         ]);
 
         Product::create([
-            'name' => 'Office Chair',
-            'slug' => 'office-chair',
-            'price' => '3000000',
-            'description' => 'Ergonomic office chair for long working hours.',
-            'category_id' => 2, // Furniture
+            'name' => 'HP Spectre x360',
+            'slug' => 'hp-spectre-x360',
+            'price' => '22000000',
+            'description' => 'Versatile 2-in-1 laptop with premium design.',
+            'category_id' => 3,
         ]);
-
+        
         Product::create([
-            'name' => 'King Size Bed',
-            'slug' => 'king-size-bed',
+            'name' => 'Lenovo ThinkPad X1 Carbon',
+            'slug' => 'lenovo-thinkpad-x1-carbon',
             'price' => '20000000',
-            'description' => 'Luxurious king-size bed with memory foam mattress.',
-            'category_id' => 2, // Furniture
+            'description' => 'Durable and reliable business laptop with great performance.',
+            'category_id' => 3,
+        ]);
+        
+        Product::create([
+            'name' => 'Acer Swift X',
+            'slug' => 'acer-swift-x',
+            'price' => '15000000',
+            'description' => 'Slim and lightweight laptop with good performance and value.',
+            'category_id' => 3,
+        ]);
+        
+        Product::create([
+            'name' => 'Asus ZenBook S 13',
+            'slug' => 'asus-zenbook-s-13',
+            'price' => '18000000',
+            'description' => 'Stylish and powerful laptop with OLED display.',
+            'category_id' => 3,
+        ]);
+        
+        Product::create([
+            'name' => 'Microsoft Surface Laptop Studio',
+            'slug' => 'microsoft-surface-laptop-studio',
+            'price' => '25000000',
+            'description' => '2-in-1 laptop with versatile design and powerful performance.',
+            'category_id' => 3,
         ]);
 
-        // Clothing
+        // Television Category
         Product::create([
-            'name' => 'Leather Jacket',
-            'slug' => 'leather-jacket',
-            'price' => '2500000',
-            'description' => 'Stylish leather jacket for men.',
-            'category_id' => 3, // Clothing
-        ]);
-
-        Product::create([
-            'name' => 'Jeans',
-            'slug' => 'jeans',
-            'price' => '800000',
-            'description' => 'Comfortable denim jeans for everyday wear.',
-            'category_id' => 3, // Clothing
-        ]);
-
-        Product::create([
-            'name' => 'Cotton T-shirt',
-            'slug' => 'cotton-t-shirt',
-            'price' => '500000',
-            'description' => 'Soft and breathable cotton T-shirt.',
-            'category_id' => 3, // Clothing
-        ]);
-
-        Product::create([
-            'name' => 'Sneakers',
-            'slug' => 'sneakers',
-            'price' => '1500000',
-            'description' => 'Comfortable and stylish sneakers for casual wear.',
-            'category_id' => 3, // Clothing
-        ]);
-
-        // Books
-        Product::create([
-            'name' => 'The Great Gatsby',
-            'slug' => 'the-great-gatsby',
-            'price' => '200000',
-            'description' => 'Classic novel by F. Scott Fitzgerald.',
-            'category_id' => 4, // Books
+            'name' => 'Sony Bravia 55" TV',
+            'slug' => 'sony-bravia-tv',
+            'price' => '15000000',
+            'description' => 'High-quality 4K LED TV with smart features.',
+            'category_id' => 4,
         ]);
 
         Product::create([
-            'name' => '1984 by George Orwell',
-            'slug' => '1984-george-orwell',
-            'price' => '180000',
-            'description' => 'Dystopian novel about a totalitarian regime.',
-            'category_id' => 4, // Books
+            'name' => 'Samsung QLED 65" TV',
+            'slug' => 'samsung-qled-tv',
+            'price' => '25000000',
+            'description' => 'Large screen QLED TV with quantum dot technology.',
+            'category_id' => 4,
         ]);
 
         Product::create([
-            'name' => 'To Kill a Mockingbird',
-            'slug' => 'to-kill-a-mockingbird',
-            'price' => '220000',
-            'description' => 'Pulitzer Prize-winning novel by Harper Lee.',
-            'category_id' => 4, // Books
+            'name' => 'LG OLED 4K TV',
+            'slug' => 'lg-oled-4k-tv',
+            'price' => '20000000',
+            'description' => 'High-quality OLED TV with excellent picture quality.',
+            'category_id' => 4,
         ]);
-
+        
         Product::create([
-            'name' => 'Harry Potter and the Philosopher\'s Stone',
-            'slug' => 'harry-potter-philosopher-stone',
-            'price' => '250000',
-            'description' => 'First book in the Harry Potter series.',
-            'category_id' => 4, // Books
+            'name' => 'TCL 55" 4K UHD TV',
+            'slug' => 'tcl-55-4k-uhd-tv',
+            'price' => '10000000',
+            'description' => 'Affordable 4K TV with good picture quality.',
+            'category_id' => 4,
         ]);
-
+        
+        Product::create([
+            'name' => 'Hisense 65" ULED 4K TV',
+            'slug' => 'hisense-65-uled-4k-tv',
+            'price' => '18000000',
+            'description' => 'High-end ULED TV with excellent picture quality.',
+            'category_id' => 4,
+        ]);
+        
+        Product::create([
+            'name' => 'Philips Ambilight 55" TV',
+            'slug' => 'philips-ambilight-55-tv',
+            'price' => '16000000',
+            'description' => '4K TV with ambient lighting for immersive viewing.',
+            'category_id' => 4,
+        ]);
+        
+        Product::create([
+            'name' => 'Panasonic 4K OLED TV',
+            'slug' => 'panasonic-4k-oled-tv',
+            'price' => '18000000',
+            'description' => 'High-quality OLED TV with good performance and features.',
+            'category_id' => 4,
+        ]);
     }
     
 }

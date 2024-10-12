@@ -29,7 +29,7 @@ class ProductController extends Controller
         }
 
         // Paginate results
-        $products = $query->paginate(8);
+        $products = $query->paginate(20);
 
         return view('products', compact('products'));
     }

@@ -19,14 +19,7 @@ Route::get('product/{product:slug}', function (Product $product) {
     return view('product-detail', ["product" => $product]);
 });
 
-Route::post('/image-upload', [ImageController::class, 'upload'])->name('image.upload');
-
-Route::get('/image', function () {
-    $imagePath = session('imagePath');
-    // Handle search with roboflow
-    
-    return view('image-upload', ['imagePath' => $imagePath]);
-})->name('image');
+Route::post('/search-image', [ImageController::class, 'searchImage'])->name('search.image');
 
 
 # Admin

@@ -57,7 +57,7 @@
                             </form>
                         </div>
                         <!-- Upload Image Button -->
-                        <form action="{{ Route('image.upload') }}" method="POST" enctype="multipart/form-data"
+                        <form action="{{ Route('search.image') }}" method="POST" enctype="multipart/form-data"
                             class="ml-2">
                             @csrf
                             <label for="file-upload"
