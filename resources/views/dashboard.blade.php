@@ -25,6 +25,7 @@
                                 <th class="px-6 py-3 text-left">Name</th>
                                 <th class="px-6 py-3 text-left">Price</th>
                                 <th class="px-6 py-3 text-left">Category</th>
+                                <th class="px-4 py-2">Stock</th>
                                 <th class="px-6 py-3 text-center">Actions</th>
                             </tr>
                         </thead>
@@ -35,6 +36,7 @@
                                     <td class="px-6 py-4">{{ $product->name }}</td>
                                     <td class="px-6 py-4">{{ $product->price }}</td>
                                     <td class="px-6 py-4">{{ $product->category->name }}</td>
+                                    <td class="border px-4 py-2">{{ $product->stock }}</td>
                                     <td class="px-6 py-4 text-center">
                                         <a href="{{ route('product.edit', $product->id) }}"
                                             class="text-blue-600 hover:text-blue-900 dark:text-blue-400 dark:hover:text-blue-500">Edit</a>

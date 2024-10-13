@@ -1,5 +1,5 @@
 <x-main-layout>
-    <section class="py-8 bg-white md:py-16 dark:bg-gray-900 antialiased">
+    <section class="py-8 mt-4 bg-white md:py-16 dark:bg-gray-900 antialiased">
         <div class="max-w-screen-xl px-4 mx-auto 2xl:px-0">
             <div class="lg:grid lg:grid-cols-2 lg:gap-8 xl:gap-16">
                 <div class="shrink-0 max-w-md lg:max-w-lg mx-auto">
@@ -14,7 +14,9 @@
                         <p class="text-2xl font-extrabold text-gray-900 sm:text-3xl dark:text-white">
                             Rp{{ number_format($product->price, 0, ',', '.') }}
                         </p>
+                    </div>
 
+                    <div class="mt-4 sm:items-center sm:gap-4 sm:flex">
                         <div class="flex items-center gap-2 mt-2 sm:mt-0">
                             <div class="flex items-center gap-1">
                                 <svg class="w-4 h-4 text-yellow-300" aria-hidden="true"
@@ -56,6 +58,12 @@
                                 345 Reviews
                             </a>
                         </div>
+                    </div>
+
+                    <div class="mt-4 sm:items-center sm:gap-4 sm:flex">
+                        <p class="text-sm font-medium leading-none text-gray-900 dark:text-white">
+                            Stock: {{ $product->stock }}
+                        </p>
                     </div>
 
                     <div class="mt-6 sm:gap-4 sm:items-center sm:flex sm:mt-8">

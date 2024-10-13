@@ -63,6 +63,7 @@ class ProductController extends Controller
             'name' => 'required|string|max:255',
             'price' => 'required|numeric',
             'description' => 'required|string',
+            'stock' => 'required|integer|min:0',
             'category_id' => 'required|exists:categories,id',
             'image' => 'required|image|mimes:jpeg,png,jpg,gif|max:2048',
         ]);
@@ -79,6 +80,7 @@ class ProductController extends Controller
             'slug' => $slug,
             'price' => $request->price,
             'description' => $request->description,
+            'stock' => $request->stock,
             'picture_path' => $imagePath,
             'category_id' => $request->category_id,
         ]);
@@ -103,6 +105,7 @@ class ProductController extends Controller
             'name' => 'required|string|max:255',
             'price' => 'required|numeric',
             'description' => 'required|string',
+            'stock' => 'required|integer|min:0',
             'category_id' => 'required|exists:categories,id',
         ]);
 
@@ -113,7 +116,7 @@ class ProductController extends Controller
         }
 
         // Update the product
-        $product->update($request->only('name', 'price', 'description', 'category_id'));
+        $product->update($request->only('name', 'price', 'description', 'stock', 'category_id'));
 
         return redirect()->route('dashboard')->with('success', 'Product updated successfully.');
     }

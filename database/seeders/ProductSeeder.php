@@ -19,6 +19,7 @@ class ProductSeeder extends Seeder
             'slug' => 'iphone-15-pro-max',
             'price' => '25000000',
             'description' => 'Latest iPhone model with advanced features.',
+            'stock' => '27',
             'category_id' => 1,
             'picture_path' => 'images/products/iphone-15-pro-max.jpg'
         ]);
@@ -28,6 +29,7 @@ class ProductSeeder extends Seeder
             'slug' => 'samsung-galaxy-s23',
             'price' => '20000000',
             'description' => 'Samsung\'s flagship phone with great performance.',
+            'stock' => '31',
             'category_id' => 1,
             'picture_path' => 'images/products/samsung-galaxy-s23.jpg'
         ]);
@@ -37,6 +39,7 @@ class ProductSeeder extends Seeder
             'slug' => 'oppo-reno-10-pro-plus',
             'price' => '23000000',
             'description' => 'Oppo\'s flagship phone with excellent camera capabilities.',
+            'stock' => '30',
             'category_id' => 1,
             'picture_path' => 'images/products/oppo-reno-10-pro-plus.jpg'
         ]);
@@ -46,6 +49,7 @@ class ProductSeeder extends Seeder
             'slug' => 'xiaomi-13-pro',
             'price' => '18000000',
             'description' => 'High-performance Xiaomi phone with advanced features.',
+            'stock' => '10',
             'category_id' => 1,
             'picture_path' => 'images/products/xiaomi-13-pro.jpg'
         ]);
@@ -55,6 +59,7 @@ class ProductSeeder extends Seeder
             'slug' => 'google-pixel-8-pro',
             'price' => '24000000',
             'description' => 'Google\'s latest flagship phone with pure Android experience.',
+            'stock' => '12',
             'category_id' => 1,
             'picture_path' => 'images/products/google-pixel-8-pro.jpg'
         ]);
@@ -64,6 +69,7 @@ class ProductSeeder extends Seeder
             'slug' => 'oneplus-11',
             'price' => '19000000',
             'description' => 'OnePlus flagship phone known for its smooth performance.',
+            'stock' => '20',
             'category_id' => 1,
             'picture_path' => 'images/products/oneplus-11.jpg'
         ]);
@@ -73,6 +79,7 @@ class ProductSeeder extends Seeder
             'slug' => 'vivo-x90-pro-plus',
             'price' => '22000000',
             'description' => 'Vivo\'s flagship phone with advanced camera technology.',
+            'stock' => '31',
             'category_id' => 1,
             'picture_path' => 'images/products/vivo-x90-pro-plus.jpg'
         ]);
@@ -83,6 +90,7 @@ class ProductSeeder extends Seeder
             'slug' => 'ipad-pro-12-9',
             'price' => '18000000',
             'description' => 'Powerful tablet with M2 chip for high-end tasks.',
+            'stock' => '30',
             'category_id' => 2,
             'picture_path' => 'images/products/ipad-pro-12.9.jpg'
         ]);
@@ -92,6 +100,7 @@ class ProductSeeder extends Seeder
             'slug' => 'galaxy-tab-s9',
             'price' => '15000000',
             'description' => 'Samsung\'s premium tablet with AMOLED display.',
+            'stock' => '21',
             'category_id' => 2,
             'picture_path' => 'images/products/samsung-galaxy-tab-s9.jpg'
         ]);
@@ -101,6 +110,7 @@ class ProductSeeder extends Seeder
             'slug' => 'xiaomi-pad-6-pro',
             'price' => '12000000',
             'description' => 'Xiaomi\'s high-performance tablet with excellent value.',
+            'stock' => '29',
             'category_id' => 2,
             'picture_path' => 'images/products/xiaomi-pad-6-pro.jpg'
         ]);
@@ -110,6 +120,7 @@ class ProductSeeder extends Seeder
             'slug' => 'lenovo-tab-p11-pro-gen-2',
             'price' => '14000000',
             'description' => 'Lenovo\'s premium tablet with great performance and display.',
+            'stock' => '23',
             'category_id' => 2,
             'picture_path' => 'images/products/lenovo-tab-p11-pro-gen-2.jpg'
         ]);
@@ -119,6 +130,7 @@ class ProductSeeder extends Seeder
             'slug' => 'huawei-matepad-pro-11',
             'price' => '13000000',
             'description' => 'Huawei\'s high-end tablet with powerful features.',
+            'stock' => '2',
             'category_id' => 2,
             'picture_path' => 'images/products/huawei-matepad-pro-11.jpg'
         ]);
@@ -128,6 +140,7 @@ class ProductSeeder extends Seeder
             'slug' => 'oppo-pad-air',
             'price' => '8000000',
             'description' => 'Oppo\'s affordable tablet with good performance.',
+            'stock' => '23',
             'category_id' => 2,
             'picture_path' => 'images/products/oppo-pad-air.jpg'
         ]);
@@ -137,6 +150,7 @@ class ProductSeeder extends Seeder
             'slug' => 'realme-pad-2',
             'price' => '9000000',
             'description' => 'Realme\'s budget-friendly tablet with decent specs.',
+            'stock' => '2',
             'category_id' => 2,
             'picture_path' => 'images/products/realme-pad-2.jpg'
         ]);
@@ -147,6 +161,7 @@ class ProductSeeder extends Seeder
             'slug' => 'macbook-pro-16',
             'price' => '35000000',
             'description' => 'Powerful laptop with M1 chip for professionals.',
+            'stock' => '9',
             'category_id' => 3,
             'picture_path' => 'images/products/apple-macbook-pro-16.jpg'
         ]);
@@ -156,6 +171,7 @@ class ProductSeeder extends Seeder
             'slug' => 'dell-xps-13',
             'price' => '18000000',
             'description' => 'Slim and powerful laptop with great performance.',
+            'stock' => '23',
             'category_id' => 3,
             'picture_path' => 'images/products/dell-xps-13.jpg'
         ]);
@@ -165,6 +181,7 @@ class ProductSeeder extends Seeder
             'slug' => 'hp-spectre-x360',
             'price' => '22000000',
             'description' => 'Versatile 2-in-1 laptop with premium design.',
+            'stock' => '34',
             'category_id' => 3,
             'picture_path' => 'images/products/hp-spectre-x360.jpg'
         ]);
@@ -174,6 +191,7 @@ class ProductSeeder extends Seeder
             'slug' => 'lenovo-thinkpad-x1-carbon',
             'price' => '20000000',
             'description' => 'Durable and reliable business laptop with great performance.',
+            'stock' => '12',
             'category_id' => 3,
             'picture_path' => 'images/products/lenovo-thinkpad-x1-carbon.jpg'
         ]);
@@ -183,6 +201,7 @@ class ProductSeeder extends Seeder
             'slug' => 'acer-swift-x',
             'price' => '15000000',
             'description' => 'Slim and lightweight laptop with good performance and value.',
+            'stock' => '11',
             'category_id' => 3,
             'picture_path' => 'images/products/acer-swift-x.jpg'
         ]);
@@ -192,6 +211,7 @@ class ProductSeeder extends Seeder
             'slug' => 'asus-zenbook-s-13',
             'price' => '18000000',
             'description' => 'Stylish and powerful laptop with OLED display.',
+            'stock' => '22',
             'category_id' => 3,
             'picture_path' => 'images/products/asus-zenbook-s-13.jpg'
         ]);
@@ -201,6 +221,7 @@ class ProductSeeder extends Seeder
             'slug' => 'microsoft-surface-laptop-studio',
             'price' => '25000000',
             'description' => '2-in-1 laptop with versatile design and powerful performance.',
+            'stock' => '25',
             'category_id' => 3,
             'picture_path' => 'images/products/microsoft-surface-laptop-studio.jpg'
         ]);
@@ -211,6 +232,7 @@ class ProductSeeder extends Seeder
             'slug' => 'sony-bravia-tv',
             'price' => '15000000',
             'description' => 'High-quality 4K LED Television with smart features.',
+            'stock' => '4',
             'category_id' => 4,
             'picture_path' => 'images/products/sony-bravia-55.jpg'
         ]);
@@ -220,6 +242,7 @@ class ProductSeeder extends Seeder
             'slug' => 'samsung-qled-tv',
             'price' => '20000000',
             'description' => 'Premium QLED Television with vibrant colors and great features.',
+            'stock' => '2',
             'category_id' => 4,
             'picture_path' => 'images/products/samsung-qled-65.jpg'
         ]);
@@ -229,6 +252,7 @@ class ProductSeeder extends Seeder
             'slug' => 'lg-oled-tv',
             'price' => '30000000',
             'description' => 'High-end OLED Television with excellent contrast and clarity.',
+            'stock' => '26',
             'category_id' => 4,
             'picture_path' => 'images/products/lg-oled-77.jpg'
         ]);
@@ -238,6 +262,7 @@ class ProductSeeder extends Seeder
             'slug' => 'tcl-55-uhd-smart-tv',
             'price' => '10000000',
             'description' => 'Affordable 4K smart television with great picture quality.',
+            'stock' => '10',
             'category_id' => 4,
             'picture_path' => 'images/products/tcl-55-uhd-smart-tv.jpg'
         ]);
@@ -247,6 +272,7 @@ class ProductSeeder extends Seeder
             'slug' => 'panasonic-65-led-tv',
             'price' => '17000000',
             'description' => 'High-quality LED television with smart features and 4K resolution.',
+            'stock' => '14',
             'category_id' => 4,
             'picture_path' => 'images/products/panasonic-65-led-tv.jpg'
         ]);
@@ -256,6 +282,7 @@ class ProductSeeder extends Seeder
             'slug' => 'philips-50-4k-tv',
             'price' => '11000000',
             'description' => 'Affordable 4K television with excellent performance for the price.',
+            'stock' => '15',
             'category_id' => 4,
             'picture_path' => 'images/products/philips-50-4k-tv.jpg'
         ]);
@@ -265,6 +292,7 @@ class ProductSeeder extends Seeder
             'slug' => 'sharp-aquos-60-tv',
             'price' => '14000000',
             'description' => 'Sharp\'s reliable LED television with great picture quality and value.',
+            'stock' => '20',
             'category_id' => 4,
             'picture_path' => 'images/products/sharp-aquos-60-tv.jpg'
         ]);

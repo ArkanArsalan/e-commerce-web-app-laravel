@@ -17,6 +17,7 @@ return new class extends Migration
             $table->string('slug')->unique();
             $table->decimal('price', 15, 2);
             $table->text('description');
+            $table->integer('stock');
             $table->string('picture_path')->default("");
             $table->foreignId('category_id')->constrained(
                 table: 'categories', indexName: 'products_category_id'

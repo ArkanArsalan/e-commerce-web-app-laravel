@@ -53,6 +53,14 @@
                             </select>
                         </div>
 
+                        <div class="mb-4">
+                            <label for="stock"
+                                class="block text-sm font-medium text-gray-700 dark:text-gray-200">Stock</label>
+                            <input type="number" name="stock" id="stock" min="0" required
+                                class="mt-1 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
+                                value="{{ old('stock', $product->stock) }}">
+                        </div>
+
                         <!-- Image Upload -->
                         <div class="mb-4">
                             <label for="image"
