@@ -3,10 +3,11 @@
 use App\Models\Product;
 use App\Models\Category;
 use Illuminate\Support\Facades\Route;
+use App\Http\Middleware\RoleMiddleware;
+use App\Http\Controllers\CartController;
 use App\Http\Controllers\ImageController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\ProfileController;
-use App\Http\Middleware\RoleMiddleware;
 
 # User
 Route::get('/', function () {
@@ -19,6 +20,13 @@ Route::get('product/{slug}', [ProductController::class, 'showDetailProduct']);
 
 Route::post('/search-image', [ImageController::class, 'searchImage'])->name('search.image');
 
+# Cart
+Route::middleware(['auth'])->group(function () {
+    Route::get('/cart', [CartController::class, 'index'])->name('cart.index');
+    Route::post('/cart', [CartController::class, 'store'])->name('cart.store');
+    Route::patch('/cart/{cart}', [CartController::class, 'update'])->name('cart.update');
+    Route::delete('/cart/{cart}', [CartController::class, 'destroy'])->name('cart.destroy');
+});
 
 # Admin
 Route::get('/dashboard', [ProductController::class, 'index'])
@@ -45,6 +53,7 @@ Route::delete('/dashboard/product-delete/{id}', [ProductController::class, 'dest
     ->middleware(['auth', 'verified', RoleMiddleware::class.':admin'])
     ->name('product.destroy');
 
+# Profile
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
