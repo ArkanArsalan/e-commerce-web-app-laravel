@@ -8,6 +8,33 @@ use GuzzleHttp\Client;
 
 class ImageController extends Controller
 {
+    public function storeProductImage(Request $request)
+    {
+        // Validate the image input
+        $request->validate([
+            'image' => 'required|image|mimes:jpeg,png,jpg,gif|max:2048',
+        ]);
+
+        // Save the uploaded image to the public path
+        if ($request->file('image')) {
+            $imageName = time() . '.' . $request->image->extension();
+            $imagePath = public_path('images/products');
+            
+            // Ensure the 'images/products' directory exists
+            if (!File::exists($imagePath)) {
+                File::makeDirectory($imagePath, 0755, true);
+            }
+
+            // Move the image to the 'images/products' directory
+            $request->image->move($imagePath, $imageName);
+
+            // Return the image path for storing in the database
+            return 'images/products/' . $imageName;
+        }
+
+        return null;
+    }
+    
     public function searchImage(Request $request)
     {
         // Validate the image input
