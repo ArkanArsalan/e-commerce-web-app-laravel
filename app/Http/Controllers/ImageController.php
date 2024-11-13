@@ -61,13 +61,21 @@ class ImageController extends Controller
             // Send the image to the Roboflow API using Guzzle
             $response = $this->sendToRoboflow($imageFullPath);
     
-            // Check if the response contains a top classification
-            if (isset($response['top'])) {
+            // Check if the response contains a top classification with confidence >= 0.9
+            if (isset($response['top']) && $response['confidence'] >= 0.9) {
                 // Redirect to the product search page with the classification as search term
                 return redirect()->route('products.find', ['search' => $response['top']]);
             }
-    
-            return redirect()->route('image')->with('error', 'No classification found.');
+            
+            $emptyProducts = new \Illuminate\Pagination\LengthAwarePaginator(
+                collect(), 
+                0,         
+                20,       
+                $request->input('page', 1), 
+                ['path' => $request->url(), 'query' => $request->query()]
+            );
+
+            return view('products', ['products' => $emptyProducts]);
         }
     
         return redirect()->route('image')->with('error', 'Image upload failed.');
