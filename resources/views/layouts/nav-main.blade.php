@@ -6,10 +6,8 @@
                 <!-- Logo -->
                 <div class="shrink-0">
                     <a href="/" title="" class="">
-                        <img class="block w-auto h-8 dark:hidden"
-                            src="https://flowbite.s3.amazonaws.com/blocks/e-commerce/logo-full.svg" alt="">
-                        <img class="hidden w-auto h-8 dark:block"
-                            src="https://flowbite.s3.amazonaws.com/blocks/e-commerce/logo-full-dark.svg" alt="">
+                        <img class="block w-auto h-8 dark:hidden" src="{{ asset('images/Logo-website.jpg') }}"
+                            alt="">
                     </a>
                 </div>
 
