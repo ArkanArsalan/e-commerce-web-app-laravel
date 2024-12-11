@@ -35,6 +35,14 @@ class ProductController extends Controller
         return view('products', compact('products'));
     }
 
+    public function findFeaturedProduct(Request $request)
+    {
+        // Query to get 8 random products
+        $products = Product::inRandomOrder()->limit(8)->get();
+    
+        return view('home', compact('products'));
+    }
+
     public function index()
     {
         $products = Product::with('category')->paginate(10);

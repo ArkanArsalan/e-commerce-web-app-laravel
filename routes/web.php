@@ -10,9 +10,7 @@ use App\Http\Controllers\ProductController;
 use App\Http\Controllers\ProfileController;
 
 # User
-Route::get('/', function () {
-    return view('home');
-})->name('home');
+Route::get('/', [ProductController::class, 'findFeaturedProduct'])->name('home');
 
 Route::get('/products', [ProductController::class, 'find'])->name('products.find');
 

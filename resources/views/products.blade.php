@@ -5,14 +5,15 @@
                 <div class="p-6 text-gray-900 dark:text-gray-100">
                     {{ $products->links() }}
                     <div class="mb-4 pt-4 grid gap-4 sm:grid-cols-2 md:mb-8 lg:grid-cols-3 xl:grid-cols-4">
-
                         @forelse ($products as $product)
                             <div
                                 class="rounded-lg border border-gray-200 bg-white p-6 shadow-sm dark:border-gray-700 dark:bg-gray-800">
-                                <div class="h-56 w-full">
-                                    <a href="/product/{{ $product->slug }}">
-                                        <img class="mx-auto h-full" src="{{ asset($product->picture_path) }}"
-                                            alt="" />
+                                <div
+                                    class="group flex items-center justify-center rounded-lg border p-4 hover:shadow-md dark:border-gray-700">
+                                    <a href="/product/{{ $product->slug }}"
+                                        class="flex items-center justify-center w-full h-full">
+                                        <img class="w-32 h-40 object-contain" src="{{ asset($product->picture_path) }}"
+                                            loading="lazy" alt="" />
                                     </a>
                                 </div>
                                 <div class="pt-6">

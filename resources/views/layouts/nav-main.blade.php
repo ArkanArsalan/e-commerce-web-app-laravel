@@ -59,8 +59,15 @@
                             class="ml-2">
                             @csrf
                             <label for="file-upload"
-                                class="relative inline-flex items-center py-2.5 px-4 text-sm font-medium text-gray-900 bg-gray-100 border border-gray-300 rounded-lg hover:bg-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 dark:bg-gray-700 dark:text-white dark:border-gray-600 dark:hover:bg-gray-600 dark:focus:ring-gray-700">
-                                Upload
+                                class="relative inline-flex items-center py-2.5 px-4 text-sm font-medium text-white bg-blue-700  border border-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-700 dark:text-white dark:border-blue-600 dark:hover:bg-blue-600 dark:focus:ring-blue-800">
+                                <svg class="w-4 h-4 mr-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                    fill="none" viewBox="0 0 20 20">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2" d="M3 3h14v14H3V3z" />
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2" d="M7 10l3-3 3 3m-3-3v8" />
+                                </svg>
+                                Image
                                 <input id="file-upload" type="file" name="image" class="sr-only"
                                     onchange="this.form.submit()">
                             </label>
