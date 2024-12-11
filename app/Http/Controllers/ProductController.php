@@ -26,7 +26,7 @@ class ProductController extends Controller
 
         // Filter by search term if provided
         if ($searchTerm) {
-            $query->where('name', 'like', '%' . $searchTerm . '%')->orWhere('description', 'like', '%' . $searchTerm . '%');
+            $query->where('name', 'ILIKE', '%' . $searchTerm . '%')->orWhere('description', 'ILIKE', '%' . $searchTerm . '%');
         }
 
         // Paginate results
