@@ -22,11 +22,7 @@
 
             <!-- Right Image Section -->
             <div class="hidden md:col-span-5 md:mt-0 md:flex">
-                <img class="dark:hidden rounded-lg shadow-lg"
-                    src="https://flowbite.s3.amazonaws.com/blocks/e-commerce/girl-shopping-list.svg"
-                    alt="Excited customer shopping illustration" />
-                <img class="hidden dark:block rounded-lg shadow-lg"
-                    src="https://flowbite.s3.amazonaws.com/blocks/e-commerce/girl-shopping-list-dark.svg"
+                <img class="dark:hidden rounded-lg shadow-lg" src="{{ asset('/images/homepageimage.png') }}""
                     alt="Excited customer shopping illustration" />
             </div>
         </div>
